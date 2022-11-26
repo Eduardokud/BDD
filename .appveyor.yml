@@ -11,7 +11,7 @@ build: off
 
 install:
   - chmod +x gradlew
-  - java -jar ./artifacts/app-ibank-build-for-testers.jar -P:profile=tes &
+  - java -jar ./artifacts/app-ibank-build-for-testers.jar &
 
 build_script:
   - ./gradlew test --info -Dselenide.headless=true
